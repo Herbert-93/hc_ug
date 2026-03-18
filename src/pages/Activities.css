@@ -1,0 +1,147 @@
+.act-category {
+  margin-bottom: 4rem;
+}
+
+.act-category:last-child { margin-bottom: 0; }
+
+.act-category-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.act-cat-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border-light);
+}
+
+.act-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.act-card {
+  display: flex;
+  gap: 2rem;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.5rem;
+  transition: var(--transition);
+}
+
+.act-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--green-pale);
+}
+
+.act-card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.act-card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--green-primary), var(--green-mid));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.act-card-icon svg {
+  width: 26px;
+  height: 26px;
+  color: var(--gold-light);
+}
+
+.act-freq-badge {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--green-primary);
+  background: var(--green-pale);
+  padding: 0.3rem 0.7rem;
+  border-radius: 100px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.act-card-body {
+  flex: 1;
+}
+
+.act-card-body h3 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--green-primary);
+  margin-bottom: 0.75rem;
+}
+
+.act-card-body > p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.act-highlights {}
+
+.highlights-label {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+}
+
+.act-highlights ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 2rem;
+}
+
+.act-highlights li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.83rem;
+  color: var(--text-muted);
+}
+
+.act-highlights li svg {
+  width: 14px;
+  height: 14px;
+  color: var(--green-primary);
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .act-card {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.5rem;
+  }
+
+  .act-card-left {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .act-highlights ul { flex-direction: column; gap: 0.35rem; }
+}

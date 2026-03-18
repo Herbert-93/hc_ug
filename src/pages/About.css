@@ -1,0 +1,315 @@
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.about-story-grid h2 { margin-bottom: 1.25rem; }
+.about-story-grid h2 em { font-style: italic; color: var(--green-mid); }
+
+.about-story-grid p {
+  color: var(--text-muted);
+  line-height: 1.85;
+  margin-bottom: 1rem;
+}
+
+.about-story-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.story-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  background: var(--white);
+  align-items: flex-start;
+  transition: var(--transition);
+}
+
+.story-card:hover {
+  transform: translateX(6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--green-pale);
+}
+
+.story-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--green-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.story-icon svg {
+  width: 20px;
+  height: 20px;
+  color: var(--gold);
+}
+
+.story-card h4 {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--green-primary);
+  margin-bottom: 0.25rem;
+}
+
+.story-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* MVV */
+.mvv-section { background: var(--cream); }
+.mvv-section .section-header h2 em { color: var(--green-mid); }
+
+.mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.mvv-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.mvv-card.featured {
+  background: var(--green-primary);
+  border-color: var(--green-primary);
+}
+
+.mvv-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.mvv-number {
+  font-family: var(--font-display);
+  font-size: 5rem;
+  font-weight: 700;
+  color: rgba(27,67,50,0.06);
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
+  line-height: 1;
+  user-select: none;
+}
+
+.mvv-card.featured .mvv-number { color: rgba(255,255,255,0.08); }
+
+.mvv-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--green-pale);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.mvv-card.featured .mvv-icon {
+  background: rgba(255,255,255,0.15);
+}
+
+.mvv-icon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--green-primary);
+}
+
+.mvv-card.featured .mvv-icon svg { color: var(--gold-light); }
+
+.mvv-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--green-primary);
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.mvv-card.featured h3 { color: var(--gold-light); }
+
+.mvv-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+.mvv-card.featured p { color: rgba(255,255,255,0.75); }
+.mvv-card.featured p strong { color: var(--gold-light); }
+
+/* Team */
+.team-section { background: var(--white); }
+.team-section .section-header h2 em { color: var(--green-mid); }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.team-card {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition);
+  background: var(--cream);
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.team-avatar {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-avatar span {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.85);
+}
+
+.team-info {
+  padding: 1.5rem;
+}
+
+.team-info h4 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--green-primary);
+  margin-bottom: 0.2rem;
+}
+
+.team-role {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+
+.team-info p {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* Partners */
+.partners-section { background: var(--cream); }
+.partners-section .section-header h2 em { color: var(--green-mid); }
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.partner-item {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.partner-item:hover {
+  border-color: var(--green-light);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-2px);
+}
+
+.partner-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.partner-icon svg {
+  width: 28px;
+  height: 28px;
+  color: var(--green-primary);
+}
+
+.partner-name {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.2rem;
+}
+
+.partner-type {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+/* About CTA */
+.about-cta {
+  background: linear-gradient(135deg, var(--green-deep), var(--green-primary));
+  padding: 5rem 0;
+}
+
+.about-cta-inner {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-cta h2 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.about-cta h2 em { font-style: italic; color: var(--gold-light); }
+
+.about-cta p {
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .partners-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .about-story-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .mvv-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .team-grid { grid-template-columns: 1fr; }
+  .partners-grid { grid-template-columns: repeat(2, 1fr); }
+}
