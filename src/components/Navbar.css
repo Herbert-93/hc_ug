@@ -1,5 +1,5 @@
 /* ===================================================
-   NAVBAR
+   NAVBAR — always visible pale green background
 =================================================== */
 .navbar {
   position: fixed;
@@ -7,16 +7,19 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 1.25rem 0;
+  padding: 1rem 0;
+  background: rgba(27, 67, 50, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.18);
   transition: all 0.4s ease;
 }
 
 .navbar.scrolled {
-  background: rgba(13, 40, 24, 0.97);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 0.75rem 0;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  background: rgba(13, 40, 24, 0.98);
+  padding: 0.65rem 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+  border-bottom-color: rgba(201, 168, 76, 0.25);
 }
 
 .navbar-inner {
@@ -83,10 +86,10 @@
 .nav-link {
   font-family: var(--font-body);
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   padding: 0.4rem 0.75rem;
   border-radius: var(--radius-sm);
   transition: var(--transition);
@@ -118,14 +121,14 @@
   padding: 0.65rem 1.25rem !important;
 }
 
-/* ---- Hamburger Button ---- */
+/* ---- Hamburger ---- */
 .menu-toggle {
   display: none;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
   border-radius: var(--radius-sm);
   cursor: pointer;
   padding: 8px 9px;
@@ -135,9 +138,7 @@
   transition: background 0.2s;
 }
 
-.menu-toggle:hover {
-  background: rgba(255, 255, 255, 0.15);
-}
+.menu-toggle:hover { background: rgba(255, 255, 255, 0.18); }
 
 .menu-toggle span {
   display: block;
@@ -194,11 +195,9 @@
   overflow-x: hidden;
 }
 
-.side-drawer.open {
-  transform: translateX(0);
-}
+.side-drawer.open { transform: translateX(0); }
 
-/* ---- Drawer Header ---- */
+/* Drawer Header */
 .drawer-header {
   display: flex;
   align-items: center;
@@ -215,12 +214,7 @@
   color: var(--gold);
 }
 
-.drawer-logo-emblem {
-  width: 32px;
-  height: 32px;
-  flex-shrink: 0;
-}
-
+.drawer-logo-emblem { width: 32px; height: 32px; flex-shrink: 0; }
 .drawer-logo-emblem svg { width: 100%; height: 100%; }
 
 .drawer-logo-text {
@@ -234,7 +228,6 @@
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--white);
-  letter-spacing: 0.01em;
 }
 
 .drawer-logo-secondary {
@@ -260,17 +253,10 @@
   flex-shrink: 0;
 }
 
-.drawer-close:hover {
-  background: rgba(255, 255, 255, 0.14);
-}
+.drawer-close:hover { background: rgba(255, 255, 255, 0.14); }
+.drawer-close svg { width: 16px; height: 16px; color: rgba(255, 255, 255, 0.85); }
 
-.drawer-close svg {
-  width: 16px;
-  height: 16px;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-/* ---- Drawer Nav ---- */
+/* Drawer Nav */
 .drawer-nav {
   flex: 1;
   display: flex;
@@ -283,12 +269,9 @@
   align-items: center;
   gap: 0.75rem;
   padding: 0.95rem 1.5rem;
-  position: relative;
   border-left: 3px solid transparent;
   transition: background 0.2s, border-color 0.2s;
   cursor: pointer;
-
-  /* Entrance animation */
   opacity: 0;
   transform: translateX(20px);
   animation: drawerLinkIn 0.35s ease forwards;
@@ -299,7 +282,6 @@
   to { opacity: 1; transform: translateX(0); }
 }
 
-/* Reset animation when drawer closes (re-triggers on open via key change) */
 .side-drawer:not(.open) .drawer-link {
   opacity: 0;
   animation: none;
@@ -325,14 +307,8 @@
   transition: color 0.2s;
 }
 
-.drawer-link:hover .drawer-link-text,
-.drawer-link.active .drawer-link-text {
-  color: var(--white);
-}
-
-.drawer-link.active .drawer-link-text {
-  color: var(--gold-light);
-}
+.drawer-link:hover .drawer-link-text { color: var(--white); }
+.drawer-link.active .drawer-link-text { color: var(--gold-light); }
 
 .drawer-link-indicator {
   width: 6px;
@@ -355,7 +331,7 @@
   transform: translateX(3px);
 }
 
-/* ---- Drawer Footer ---- */
+/* Drawer Footer */
 .drawer-footer {
   padding: 1.25rem 1.5rem 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -365,11 +341,7 @@
   flex-shrink: 0;
 }
 
-.drawer-cta {
-  width: 100%;
-  justify-content: center;
-  font-size: 0.8rem !important;
-}
+.drawer-cta { width: 100%; justify-content: center; font-size: 0.8rem !important; }
 
 .drawer-contact-snippet {
   display: flex;
@@ -378,17 +350,8 @@
   color: rgba(255, 255, 255, 0.55);
 }
 
-.drawer-contact-snippet svg {
-  width: 15px;
-  height: 15px;
-  color: var(--gold);
-  flex-shrink: 0;
-}
-
-.drawer-contact-snippet span {
-  font-size: 0.82rem;
-  font-family: var(--font-body);
-}
+.drawer-contact-snippet svg { width: 15px; height: 15px; color: var(--gold); flex-shrink: 0; }
+.drawer-contact-snippet span { font-size: 0.82rem; font-family: var(--font-body); }
 
 .drawer-tagline {
   font-family: var(--font-body);
@@ -400,33 +363,25 @@
 }
 
 /* ===================================================
-   CONTENT SPACING — stops pages going under the navbar
+   CONTENT SPACING — stops overlap with fixed navbar
 =================================================== */
-main {
-  padding-top: 80px;
-}
+main { padding-top: 80px; }
 
-/* The hero and page-hero sections manage their own top spacing,
-   so we remove the extra padding-top for those first children */
 main > .hero:first-child,
 main > .page-hero:first-child {
   padding-top: 0;
   margin-top: 0;
 }
 
-/* Hero section already has padding-top: 8rem built in,
-   so we just ensure the fixed navbar height is compensated */
-main > .hero:first-child {
-  min-height: 100vh;
-}
+main > .hero:first-child { min-height: 100vh; }
 
 /* ===================================================
-   RESPONSIVE BREAKPOINTS
+   RESPONSIVE
 =================================================== */
 @media (max-width: 900px) {
-  .navbar-nav   { display: none; }
-  .navbar-cta   { display: none; }
-  .menu-toggle  { display: flex; }
+  .navbar-nav  { display: none; }
+  .navbar-cta  { display: none; }
+  .menu-toggle { display: flex; }
 }
 
 @media (max-width: 480px) {
