@@ -22,7 +22,11 @@ export default function Contact() {
   return (
     <main>
       <section className="page-hero">
-        <div className="container">
+        <div className="page-hero-photo">
+          <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=1400&q=80" alt="Contact Hope For Communities Uganda" loading="eager" />
+        </div>
+        <div className="page-hero-overlay" />
+        <div className="container page-hero-content">
           <div className="section-label" style={{ justifyContent: 'center', color: 'rgba(255,255,255,0.6)' }}>Reach Out</div>
           <h1>Contact <em>Us</em></h1>
           <p>We'd love to hear from you — whether you're a youth seeking a program, a partner organisation, or a donor who wants to make a difference.</p>

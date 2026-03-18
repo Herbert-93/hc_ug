@@ -115,7 +115,11 @@ export default function Programs() {
   return (
     <main>
       <section className="page-hero">
-        <div className="container">
+        <div className="page-hero-photo">
+          <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1400&q=80" alt="Youth in training programs" loading="eager" />
+        </div>
+        <div className="page-hero-overlay" />
+        <div className="container page-hero-content">
           <div className="section-label" style={{ justifyContent: 'center', color: 'rgba(255,255,255,0.6)' }}>What We Offer</div>
           <h1>Our <em>Programs</em></h1>
           <p>Six comprehensive programs designed to transform every dimension of a young person's life — from skills to character, talent to leadership.</p>

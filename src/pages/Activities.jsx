@@ -89,7 +89,11 @@ export default function Activities() {
   return (
     <main>
       <section className="page-hero">
-        <div className="container">
+        <div className="page-hero-photo">
+          <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1400&q=80" alt="HFCU community activities" loading="eager" />
+        </div>
+        <div className="page-hero-overlay" />
+        <div className="container page-hero-content">
           <div className="section-label" style={{ justifyContent: 'center', color: 'rgba(255,255,255,0.6)' }}>Community Engagement</div>
           <h1>Our <em>Activities</em></h1>
           <p>Beyond formal programmes — a vibrant calendar of events, campaigns, and community activities that keep youth engaged, inspired, and connected year-round.</p>

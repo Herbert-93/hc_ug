@@ -10,8 +10,16 @@ export default function About() {
     <main>
       {/* Page Hero */}
       <section className="page-hero">
-        <div className="container">
-          <div className="section-label" style={{ justifyContent: 'center', color: 'rgba(255,255,255,0.6)' }}>
+        <div className="page-hero-photo">
+          <img
+            src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1400&q=80"
+            alt="Hope For Communities Uganda team"
+            loading="eager"
+          />
+        </div>
+        <div className="page-hero-overlay" />
+        <div className="container page-hero-content">
+          <div className="section-label" style={{ justifyContent: 'center', color: 'rgba(255,255,255,0.7)' }}>
             Our Story
           </div>
           <h1>About <em>Hope For Communities</em> Uganda</h1>
@@ -36,29 +44,43 @@ export default function About() {
                 Our approach is holistic — addressing skills, character, health, civic awareness, and economic opportunity — because we know that lasting transformation comes from attending to the whole person.
               </p>
             </div>
-            <div className="about-story-visual reveal-right">
-              <div className="story-card story-card-1">
-                <div className="story-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                </div>
-                <h4>Integrity First</h4>
-                <p>We hold ourselves to the highest standards of transparency and accountability in everything we do.</p>
+
+            {/* Photo stack */}
+            <div className="about-photo-stack reveal-right">
+              <div className="stack-photo-main">
+                <img
+                  src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=700&q=80"
+                  alt="HFCU community engagement"
+                  loading="lazy"
+                />
               </div>
-              <div className="story-card story-card-2">
-                <div className="story-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              <div className="stack-photo-float">
+                <img
+                  src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=400&q=80"
+                  alt="Youth in class"
+                  loading="lazy"
+                />
+                <div className="stack-badge">
+                  <span className="stack-badge-num">2,500+</span>
+                  <span className="stack-badge-label">Lives Touched</span>
                 </div>
-                <h4>Community-Centred</h4>
-                <p>All programs are co-designed with communities to ensure relevance, ownership, and sustainability.</p>
-              </div>
-              <div className="story-card story-card-3">
-                <div className="story-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
-                </div>
-                <h4>Youth-Led Culture</h4>
-                <p>Young people are not just beneficiaries — they are active leaders, trainers, and champions within HFCU.</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values cards */}
+      <section className="section values-strip">
+        <div className="container">
+          <div className="values-cards stagger-children">
+            {valueCards.map((v, i) => (
+              <div className="value-card" key={i}>
+                <div className="value-icon" dangerouslySetInnerHTML={{ __html: v.icon }} />
+                <h4>{v.title}</h4>
+                <p>{v.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -77,9 +99,7 @@ export default function About() {
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               </div>
               <h3>Mission</h3>
-              <p>
-                To empower Uganda's youth through comprehensive vocational training, talent discovery, practical life skilling, and community-based sensitization programmes that enable them to lead purposeful, productive, and dignified lives.
-              </p>
+              <p>To empower Uganda's youth through comprehensive vocational training, talent discovery, practical life skilling, and community-based sensitization programmes that enable them to lead purposeful, productive, and dignified lives.</p>
             </div>
             <div className="mvv-card featured">
               <div className="mvv-number">02</div>
@@ -87,9 +107,7 @@ export default function About() {
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
               </div>
               <h3>Vision</h3>
-              <p>
-                A Uganda where every young person is fully equipped, deeply empowered, and passionately inspired to transform their family, community, and nation through excellence in skills, character, and service.
-              </p>
+              <p>A Uganda where every young person is fully equipped, deeply empowered, and passionately inspired to transform their family, community, and nation through excellence in skills, character, and service.</p>
             </div>
             <div className="mvv-card">
               <div className="mvv-number">03</div>
@@ -97,9 +115,7 @@ export default function About() {
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               </div>
               <h3>Values</h3>
-              <p>
-                We are guided by <strong>Integrity</strong>, <strong>Dignity</strong>, <strong>Inclusion</strong>, <strong>Excellence</strong>, <strong>Community</strong>, and <strong>Hope</strong> — principles that anchor every decision, program, and relationship we build.
-              </p>
+              <p>We are guided by <strong>Integrity</strong>, <strong>Dignity</strong>, <strong>Inclusion</strong>, <strong>Excellence</strong>, <strong>Community</strong>, and <strong>Hope</strong> — principles that anchor every decision, program, and relationship we build.</p>
             </div>
           </div>
         </div>
@@ -116,8 +132,8 @@ export default function About() {
           <div className="team-grid stagger-children">
             {teamMembers.map((member, i) => (
               <div className="team-card" key={i}>
-                <div className="team-avatar" style={{ background: member.color }}>
-                  <span>{member.initials}</span>
+                <div className="team-photo">
+                  <img src={member.photo} alt={member.name} loading="lazy" />
                 </div>
                 <div className="team-info">
                   <h4>{member.name}</h4>
@@ -152,26 +168,60 @@ export default function About() {
 
       {/* CTA */}
       <section className="about-cta reveal">
-        <div className="container">
-          <div className="about-cta-inner">
-            <h2>Join Our <em>Movement</em></h2>
-            <p>Whether you're a youth seeking opportunity, an organisation wanting to partner, or an individual wishing to volunteer — there's a place for you at HFCU.</p>
-            <Link to="/contact" className="btn-primary">
-              <span>Get In Touch</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </Link>
-          </div>
+        <div className="about-cta-photo">
+          <img
+            src="https://images.unsplash.com/photo-1547826039-a3209da9d515?auto=format&fit=crop&w=1400&q=80"
+            alt="Join our movement"
+            loading="lazy"
+          />
+        </div>
+        <div className="about-cta-overlay" />
+        <div className="container about-cta-content">
+          <h2>Join Our <em>Movement</em></h2>
+          <p>Whether you're a youth seeking opportunity, an organisation wanting to partner, or an individual wishing to volunteer — there's a place for you at HFCU.</p>
+          <Link to="/contact" className="btn-primary">
+            <span>Get In Touch</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </Link>
         </div>
       </section>
     </main>
   )
 }
 
+/* ---- Data ---- */
+const valueCards = [
+  { title: 'Integrity', desc: 'We hold ourselves to the highest standards of transparency and accountability in everything we do.', icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>` },
+  { title: 'Inclusion', desc: 'Every young person belongs — regardless of tribe, religion, gender, or background.', icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>` },
+  { title: 'Excellence', desc: 'We pursue the highest quality in every program, every training, and every community interaction.', icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>` },
+  { title: 'Hope', desc: 'We believe deeply in the unlimited potential of Uganda\'s youth to build a better nation.', icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>` },
+]
+
 const teamMembers = [
-  { name: 'Dr. Grace Nakato', role: 'Executive Director', initials: 'GN', color: 'linear-gradient(135deg, #1B4332, #2D6A4F)', bio: 'A youth development specialist with 15+ years experience in community empowerment across East Africa.' },
-  { name: 'Mr. David Ssekandi', role: 'Programs Director', initials: 'DS', color: 'linear-gradient(135deg, #2D6A4F, #40916C)', bio: 'Vocational training expert who has designed and implemented skills programs for over 1,000 youth.' },
-  { name: 'Ms. Prossy Nalwoga', role: 'Community Relations Manager', initials: 'PN', color: 'linear-gradient(135deg, #C9A84C, #B8962E)', bio: 'Passionate advocate who coordinates HFCU\'s outreach activities across 12 districts of Uganda.' },
-  { name: 'Mr. Brian Mugisha', role: 'Finance & Administration', initials: 'BM', color: 'linear-gradient(135deg, #0D2818, #1B4332)', bio: 'Certified accountant ensuring transparency and accountability in all HFCU financial operations.' },
+  {
+    name: 'Dr. Grace Nakato',
+    role: 'Executive Director',
+    photo: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80',
+    bio: 'A youth development specialist with 15+ years experience in community empowerment across East Africa.',
+  },
+  {
+    name: 'Mr. David Ssekandi',
+    role: 'Programs Director',
+    photo: 'https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?auto=format&fit=crop&w=400&q=80',
+    bio: 'Vocational training expert who has designed and implemented skills programs for over 1,000 youth.',
+  },
+  {
+    name: 'Ms. Prossy Nalwoga',
+    role: 'Community Relations Manager',
+    photo: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=400&q=80',
+    bio: "Passionate advocate who coordinates HFCU's outreach activities across 12 districts of Uganda.",
+  },
+  {
+    name: 'Mr. Brian Mugisha',
+    role: 'Finance & Administration',
+    photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+    bio: 'Certified accountant ensuring transparency and accountability in all HFCU financial operations.',
+  },
 ]
 
 const partners = [
