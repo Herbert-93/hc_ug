@@ -90,7 +90,7 @@ export default function Activities() {
     <main>
       <section className="page-hero">
         <div className="page-hero-photo">
-          <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1400&q=80" alt="HFCU community activities" loading="eager" />
+          <img src="https://images.pexels.com/photos/28100867/pexels-photo-28100867.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="HFCU community activities" loading="eager" />
         </div>
         <div className="page-hero-overlay" />
         <div className="container page-hero-content">

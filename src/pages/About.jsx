@@ -12,7 +12,7 @@ export default function About() {
       <section className="page-hero">
         <div className="page-hero-photo">
           <img
-            src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1400&q=80"
+            src="https://images.pexels.com/photos/33763179/pexels-photo-33763179.jpeg?auto=compress&cs=tinysrgb&w=1400"
             alt="Hope For Communities Uganda team"
             loading="eager"
           />
@@ -49,14 +49,14 @@ export default function About() {
             <div className="about-photo-stack reveal-right">
               <div className="stack-photo-main">
                 <img
-                  src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=700&q=80"
+                  src="https://images.pexels.com/photos/28100876/pexels-photo-28100876.jpeg?auto=compress&cs=tinysrgb&w=700"
                   alt="HFCU community engagement"
                   loading="lazy"
                 />
               </div>
               <div className="stack-photo-float">
                 <img
-                  src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=400&q=80"
+                  src="https://images.pexels.com/photos/31118299/pexels-photo-31118299.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Youth in class"
                   loading="lazy"
                 />
@@ -170,7 +170,7 @@ export default function About() {
       <section className="about-cta reveal">
         <div className="about-cta-photo">
           <img
-            src="https://images.unsplash.com/photo-1547826039-a3209da9d515?auto=format&fit=crop&w=1400&q=80"
+            src="https://images.pexels.com/photos/28101464/pexels-photo-28101464.jpeg?auto=compress&cs=tinysrgb&w=1400"
             alt="Join our movement"
             loading="lazy"
           />
@@ -201,25 +201,25 @@ const teamMembers = [
   {
     name: 'Dr. Grace Nakato',
     role: 'Executive Director',
-    photo: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80',
+    photo: 'https://images.pexels.com/photos/29852895/pexels-photo-29852895.jpeg?auto=compress&cs=tinysrgb&w=400',
     bio: 'A youth development specialist with 15+ years experience in community empowerment across East Africa.',
   },
   {
     name: 'Mr. David Ssekandi',
     role: 'Programs Director',
-    photo: 'https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?auto=format&fit=crop&w=400&q=80',
+    photo: 'https://images.pexels.com/photos/19039168/pexels-photo-19039168.jpeg?auto=compress&cs=tinysrgb&w=400',
     bio: 'Vocational training expert who has designed and implemented skills programs for over 1,000 youth.',
   },
   {
     name: 'Ms. Prossy Nalwoga',
     role: 'Community Relations Manager',
-    photo: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=400&q=80',
+    photo: 'https://images.pexels.com/photos/18789516/pexels-photo-18789516.jpeg?auto=compress&cs=tinysrgb&w=400',
     bio: "Passionate advocate who coordinates HFCU's outreach activities across 12 districts of Uganda.",
   },
   {
     name: 'Mr. Brian Mugisha',
     role: 'Finance & Administration',
-    photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+    photo: 'https://images.pexels.com/photos/16221482/pexels-photo-16221482.jpeg?auto=compress&cs=tinysrgb&w=400',
     bio: 'Certified accountant ensuring transparency and accountability in all HFCU financial operations.',
   },
 ]

@@ -116,7 +116,7 @@ export default function Programs() {
     <main>
       <section className="page-hero">
         <div className="page-hero-photo">
-          <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1400&q=80" alt="Youth in training programs" loading="eager" />
+          <img src="https://images.pexels.com/photos/27081973/pexels-photo-27081973.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Youth in training programs" loading="eager" />
         </div>
         <div className="page-hero-overlay" />
         <div className="container page-hero-content">

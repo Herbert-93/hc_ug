@@ -23,7 +23,7 @@ export default function Contact() {
     <main>
       <section className="page-hero">
         <div className="page-hero-photo">
-          <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=1400&q=80" alt="Contact Hope For Communities Uganda" loading="eager" />
+          <img src="https://images.pexels.com/photos/28100865/pexels-photo-28100865.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Contact Hope For Communities Uganda" loading="eager" />
         </div>
         <div className="page-hero-overlay" />
         <div className="container page-hero-content">

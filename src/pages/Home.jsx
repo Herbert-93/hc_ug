@@ -42,7 +42,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-photo">
           <img
-            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=80"
+            src="https://images.pexels.com/photos/28100867/pexels-photo-28100867.jpeg?auto=compress&cs=tinysrgb&w=1600"
             alt="African youth gathered together in Uganda"
             loading="eager"
           />
@@ -113,7 +113,7 @@ export default function Home() {
             <div className="mv-visual reveal-left">
               <div className="mv-photo-wrap">
                 <img
-                  src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80"
+                  src="https://images.pexels.com/photos/15004705/pexels-photo-15004705.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="African youth empowerment session"
                   loading="lazy"
                 />
@@ -293,7 +293,7 @@ export default function Home() {
       <section className="cta-banner">
         <div className="cta-photo">
           <img
-            src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=1400&q=80"
+            src="https://images.pexels.com/photos/28100865/pexels-photo-28100865.jpeg?auto=compress&cs=tinysrgb&w=1400"
             alt="African community members gathered together"
             loading="lazy"
           />

@@ -7,73 +7,73 @@ const galleryItems = [
     id: 1, category: 'Training',
     title: 'Vocational Training Workshop',
     desc: 'Youth learning carpentry and construction skills at our Kampala training centre.',
-    src: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=800&q=80',
+    src: 'https://images.pexels.com/photos/19247590/pexels-photo-19247590.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     id: 2, category: 'Events',
     title: 'Annual Youth Summit 2024',
     desc: 'Over 2,000 youth gathered for our flagship summit in Kampala.',
-    src: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80',
+    src: 'https://images.pexels.com/photos/33763179/pexels-photo-33763179.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     id: 3, category: 'Talent',
     title: 'Talent Showcase Finals',
     desc: 'Incredible performances at our Q3 talent showcase event.',
-    src: 'https://images.unsplash.com/photo-1547826039-a3209da9d515?auto=format&fit=crop&w=800&q=80',
+    src: 'https://images.pexels.com/photos/27010242/pexels-photo-27010242.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     id: 4, category: 'Outreach',
     title: 'Community Outreach Drive',
     desc: 'Our team reaching youth in rural communities across Uganda.',
-    src: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80',
+    src: 'https://images.pexels.com/photos/28100865/pexels-photo-28100865.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     id: 5, category: 'Health',
     title: 'Health Camp — Mukono',
     desc: 'Free medical check-ups and counselling for community members.',
-    src: 'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=800&q=80',
+    src: 'https://images.pexels.com/photos/28102678/pexels-photo-28102678.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     id: 6, category: 'Training',
     title: 'Digital Skills Bootcamp',
     desc: 'Youth learning computer skills and digital marketing.',
-    src: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80',
+    src: 'https://images.pexels.com/photos/31118299/pexels-photo-31118299.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     id: 7, category: 'Sports',
     title: 'Youth Football League',
     desc: 'District football league finals bringing communities together.',
-    src: 'https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=800&q=80',
+    src: 'https://images.pexels.com/photos/34138662/pexels-photo-34138662.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     id: 8, category: 'Events',
     title: 'School Career Fair',
     desc: 'Guiding S6 finalists on career paths and opportunities.',
-    src: 'https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=800&q=80',
+    src: 'https://images.pexels.com/photos/27081973/pexels-photo-27081973.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     id: 9, category: 'Training',
     title: 'Tailoring & Fashion Class',
     desc: 'Women in our tailoring program showcase their creations.',
-    src: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80',
+    src: 'https://images.pexels.com/photos/29997424/pexels-photo-29997424.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     id: 10, category: 'Outreach',
     title: 'Clean-Up Drive — Jinja',
     desc: 'Community cleanup with 200+ youth volunteers in Jinja.',
-    src: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=800&q=80',
+    src: 'https://images.pexels.com/photos/19461313/pexels-photo-19461313.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     id: 11, category: 'Talent',
     title: 'Drama & Arts Festival',
     desc: 'Performing arts showcase celebrating youth creativity.',
-    src: 'https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=800&q=80',
+    src: 'https://images.pexels.com/photos/28101464/pexels-photo-28101464.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     id: 12, category: 'Health',
     title: 'Mental Health Awareness Day',
     desc: 'Breaking stigma — open dialogue on mental wellness among youth.',
-    src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80',
+    src: 'https://images.pexels.com/photos/32418641/pexels-photo-32418641.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
 ]
 
@@ -93,7 +93,7 @@ export default function Gallery() {
       <section className="page-hero">
         <div className="page-hero-photo">
           <img
-            src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=1400&q=80"
+            src="https://images.pexels.com/photos/33763179/pexels-photo-33763179.jpeg?auto=compress&cs=tinysrgb&w=1400"
             alt="HFCU community moments"
             loading="eager"
           />
